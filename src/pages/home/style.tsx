@@ -3,7 +3,6 @@ import { Flex } from "@/styles/Global";
 import { Button } from "@/styles/Buttons";
 import { css } from "@stitches/react";
 
-import meIlustration from "@/public/static/img/background/me-ilustration.svg";
 import backgroundImg from "@/public/static/img/background/header-bg.svg";
 
 import dots from "@/public/static/img/background/dots.svg";
@@ -62,6 +61,29 @@ export const HeaderButtonsArea = styled(Flex, {
     flexDirection: "column",
     gridGap: "$2",
     marginBottom: "$2",
+  },
+});
+
+export const ContainerFlag = styled("a", {
+  width: "40px",
+  height: "40px",
+  textAlign: "center",
+  alignItems: "center",
+  marginTop: "12px",
+
+  "& span": {
+    display: "flex",
+    alignItems: "center",
+    gap: "8px",
+  },
+});
+
+export const FlagBrazil = styled("img", {
+  width: "100%",
+  height: "100%",
+  "&:hover": {
+    width: "33px",
+    height: "33px",
   },
 });
 

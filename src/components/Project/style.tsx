@@ -43,6 +43,12 @@ export const ProjectTitle = styled(Text, {});
 
 export const Project = styled("article", {
   marginTop: "4rem",
+  padding: "2rem",
+  border: "4px solid $brand1",
+  borderRadius: "9px",
+  "&:hover": {
+    boxShadow: "0px 0px 5px 2px white",
+  },
   [`&:first-child`]: {
     [`& ${ProjectTitle}:first-child`]: {
       position: "relative",
@@ -53,7 +59,7 @@ export const Project = styled("article", {
       },
 
       "&::before": {
-        content: 'New',
+        content: "New",
         position: "absolute",
         top: "5px",
         right: "-4rem",

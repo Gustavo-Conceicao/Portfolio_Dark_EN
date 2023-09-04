@@ -14,6 +14,7 @@ import { FaBars } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
 import { Button } from "@/styles/Buttons";
 import { Container, Flex } from "@/styles/Global";
+import { ContainerFlag, FlagBrazil } from "@/pages/home/style";
 
 export interface MenuButtonOpen {
   open: Boolean;
@@ -21,7 +22,6 @@ export interface MenuButtonOpen {
 }
 
 export const NavBar = (): JSX.Element => {
-
   const isWide = useMedia({ maxWidth: "991px" });
 
   document.title = userData.nameUser;
@@ -38,6 +38,9 @@ export const NavBar = (): JSX.Element => {
         <NavbarMobileArea>
           <LogoTipo>
             <LogoTipoText>{userData.nameUser}</LogoTipoText>
+            <ContainerFlag href="https://pt-light-portifolio-gustavo-conceicao-gustavo-conceicao.vercel.app/">
+              <FlagBrazil src="src/public/brazil-flag-bandeira.png" />
+            </ContainerFlag>
           </LogoTipo>
           {isWide && (
             <Button
@@ -49,9 +52,7 @@ export const NavBar = (): JSX.Element => {
             </Button>
           )}
         </NavbarMobileArea>
-        <Flex>
-          {isWide ? open && <NavLinks /> : <NavLinks />}
-        </Flex>
+        <Flex>{isWide ? open && <NavLinks /> : <NavLinks />}</Flex>
       </Container>
     </NavbarWrapper>
   );

@@ -24,6 +24,12 @@ export const Navbar = styled("nav", {
 
 export const LogoTipo = styled(Flex, {
   alignItems: "center",
+
+  "& img": {
+    width: "25px",
+    height: "25px",
+    cursor: "pointer",
+  },
 });
 
 export const LogoTipoText = styled("span", {

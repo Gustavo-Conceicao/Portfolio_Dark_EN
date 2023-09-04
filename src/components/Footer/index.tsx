@@ -3,9 +3,9 @@ import { Text } from "@/styles/Text";
 import { Footer as FooterWrapper } from "./style";
 import { UserImage } from "@/pages/home/style";
 import { userData } from "@/utils/userData";
-import { FaLinkedinIn, FaInstagram, FaFacebookF } from "react-icons/fa";
+import { FaLinkedinIn, FaFacebookF, FaWhatsapp } from "react-icons/fa";
 import { Button } from "@/styles/Buttons";
-// import { HandEffect } from "../HandEffect";
+import { SiWhatsapp } from "react-icons/si";
 
 export const Footer = (): JSX.Element => {
   return (
@@ -35,24 +35,6 @@ export const Footer = (): JSX.Element => {
             gap: "$2",
           }}
         >
-          <Button
-            className="instagram"
-            type="circle"
-            as="a"
-            target="_blank"
-            href={`https://instagram.com/${userData.instagramUser}`}
-          >
-            <FaInstagram />
-          </Button>
-          <Button
-            className="facebook"
-            type="circle"
-            as="a"
-            target="_blank"
-            href={`https://fb.com/${userData.facebookUser}`}
-          >
-            <FaFacebookF />
-          </Button>
           <Button
             className="linkedin"
             type="circle"

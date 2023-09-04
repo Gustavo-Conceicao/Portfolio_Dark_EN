@@ -81,7 +81,6 @@ export const globalStyles = globalCss({
 });
 
 export const GlobalStyle = ({ children }: GlobalStyleProps): JSX.Element => {
-
   const theme = createTheme({
     colors: {
       brand1: "#623CEA",
@@ -119,10 +118,10 @@ export const GlobalStyle = ({ children }: GlobalStyleProps): JSX.Element => {
       texts: '"Inter", sans-serif',
     },
     fontSizes: {
-      title1: "2.75rem",
+      title1: "2.8rem",
       title2: "1.75rem",
       title3: "1.50rem",
-      title4: "1.25rem",
+      title4: "1.4rem",
       text1: "1rem",
       text2: "0.875rem",
 
