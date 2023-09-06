@@ -39,7 +39,7 @@ export const NavBar = (): JSX.Element => {
           <LogoTipo>
             <LogoTipoText>{userData.nameUser}</LogoTipoText>
             <ContainerFlag href="https://pt-light-portifolio-gustavo-conceicao-gustavo-conceicao.vercel.app/">
-              <FlagBrazil src="src/public/brazil-flag-bandeira.png" />
+              <FlagBrazil src="src/public/static/img/ brazil-flag-bandeira.png" />
             </ContainerFlag>
           </LogoTipo>
           {isWide && (
